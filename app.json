@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme":"WanderPetsApp",
     "name": "WanderPets",
     "slug": "WanderPets",
     "version": "1.0.0",
