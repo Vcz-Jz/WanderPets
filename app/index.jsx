@@ -7,11 +7,14 @@ import Logo from '../assets/img/Logo.png'
 const Home = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Image source={Logo} style={styles.logo} />
-        <Text style={styles.title}>WANDER <Text style={ {color: '#DA828F'}}>PETS</Text></Text>
-      </View>
-
+        <View style={styles.header}>
+            <Image source={Logo} style={styles.logo} />
+            <Text style={styles.title}>WANDER <Text style={ {color: '#DA828F'}}>PETS</Text></Text>
+        </View>
+        
+        <View>  
+            <Text style={styles.subHeader}>Recently Lost Pets</Text>
+        </View>
     </View>
   )
 }
@@ -24,7 +27,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
     header: {
-        height: 250,
+        height: 200,
         backgroundColor: '#7DFCD5',
         alignItems: 'center',
         justifyContent: 'center',
@@ -33,7 +36,13 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 45,
         color: '#FFA850'
-
+    },
+    subHeader: {
+        marginTop: 20,
+        marginBottom: 30,
+        left: 20,
+        fontSize: 16,
+        fontWeight: 'bold'
     },
     logo:{
         width: 150,
